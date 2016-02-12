@@ -1,4 +1,4 @@
-# Hubot, on Heroku for Slack: Code for America edition
+# Hubot for Slack: Brigade Edition
 
 This is a version of GitHub's Campfire bot, [Hubot](http://hubot.github.com/), which is designed to be deployed on [Heroku](http://www.heroku.com) with the [Slack adaptor](https://github.com/tinyspeck/hubot-slack).
 
@@ -35,6 +35,12 @@ By this point, if all has gone
 The aforementioned **Deploy to Heroku** button:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### Notes
+
+* Your brigade will not get automatic updates when this original repo is
+  updated. If there are future changes, you will need to compare and
+merge them into your own repo.
 
 ## License
 

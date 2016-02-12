@@ -2,7 +2,7 @@
   "name": "Hubot for Slack: Brigade Edition",
   "description": "One-button deploy for Hubot on Heroku with Slack adapter, customised for Code for America Brigades.",
   "logo": "https://i.cloudup.com/_823ueoTYl.png",
-  "repository": "https://github.com/patcon/hubot-heroku-slack",
+  "repository": "https://github.com/patcon/hubot-cfa-heroku-slack",
   "success_url": "/hubot/help",
   "env": {
     "HUBOT_HEROKU_KEEPALIVE_URL": {
