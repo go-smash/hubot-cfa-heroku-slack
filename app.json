@@ -1,25 +1,33 @@
 {
-  "name": "Hubot for IRC",
-  "description": "One-button deploy for Hubot on Heroku with IRC adapter.",
+  "name": "Hubot for Slack: Brigade Edition",
+  "description": "One-button deploy for Hubot on Heroku with Slack adapter, customised for Code for America Brigades.",
   "logo": "https://i.cloudup.com/_823ueoTYl.png",
-  "repository": "https://github.com/cobyism/hubot-heroku-irc",
+  "repository": "https://github.com/patcon/hubot-heroku-slack",
+  "success_url": "/hubot/help",
   "env": {
-    "HEROKU_URL": {
-      "description": "Url of this app so hubot can regularly ping himself to stay awake.",
-      "value": "http://YOURAPPNAMEHERE.herokuapp.com"
+    "HUBOT_HEROKU_KEEPALIVE_URL": {
+      "description": "URL of the hosted app. Use the App Name chosen above.",
+      "value": "http://YOURAPPNAMEHERE.herokuapp.com/"
     },
     "HUBOT_SLACK_TOKEN": {
-      "description": "The token you are given by Slack when you add the Hubot integration."
+      "description": "The token you are given after adding Hubot integration: https://slack.com/apps/A0F7XDU93-hubot",
+      "required": true
     },
     "HUBOT_SLACK_TEAM": {
-      "description": "Your team's Slack subdomain. e.g. if your team is https://myteam.slack.com/, you would enter 'myteam' here."
+      "description": "Your team's Slack subdomain. e.g. if your team is https://myteam.slack.com/, you would enter 'myteam' here.",
+      "required": true
     },
-    "HUBOT_SLACK_BOTNAME": {
-      "description": "Name your Hubot",
-      "value": "slackbot"
+    "HUBOT_CFA_CHECKIN_DEFAULT_EVENT": {
+      "description": "The event name used when not specified during `hubot checkin` command.",
+      "value": "Weekly Civic Hack Night"
+    },
+    "HUBOT_CFA_BRIGADE_ID": {
+      "description": "The brigade ID assigned by the CfA API. Find it here: http://codeforamerica.org/api/organizations?q=YourCity",
+      "value": "Code-for-Anytown",
+      "required": true
     }
   },
   "addons": [
-    "rediscloud"
+    "heroku-redis"
   ]
 }

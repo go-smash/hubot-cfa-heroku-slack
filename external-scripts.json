@@ -1,1 +1,6 @@
-[]
+[
+  "hubot-cfa-brigade-checkin",
+  "hubot-help",
+  "hubot-heroku-keepalive",
+  "hubot-redis-brain"
+]
