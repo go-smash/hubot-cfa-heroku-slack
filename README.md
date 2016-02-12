@@ -1,8 +1,40 @@
-# Hubot, on Heroku, with the Slack adaptor
+# Hubot, on Heroku for Slack: Code for America edition
 
-This is a version of GitHub's Campfire bot, [Hubot](http://hubot.github.com/), which is designed to be deployed on [Heroku](http://www.heroku.com) with the [Slack adaptor](https://github.com/tinyspeck/hubot-slack). To deploy your own Hubot, just click the button below:
+This is a version of GitHub's Campfire bot, [Hubot](http://hubot.github.com/), which is designed to be deployed on [Heroku](http://www.heroku.com) with the [Slack adaptor](https://github.com/tinyspeck/hubot-slack).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cobyism/hubot-heroku-slack)
+This Hubot has been customized for being most useful to Code for America
+brigades. At the moment, that means:
+
+* Connected to Slack, the chat tool of choice for brigades.
+* Includes the `hubot-cfa-brigade-checkin` script for event checkins
+  from chat.
+* More to come?
+
+### Usage
+
+The most straight-forward way to get up and running will assume that you
+don't already have a Hubot connected to Slack.
+
+1. Fork this repo.
+2. (Optional) Make any changes you'd like.
+3. _In your own repo._ click the **Deploy to Heroku** button below. The
+   italicized part is particularly important if you made changes.
+4. Use the form to configure and provision your Hubot. (You will need to
+   open new tabs and visit other websites while filling it out.)
+
+   **Note:** Don't forget name your Hubot something fun, or others will
+judge you. At least I will. (The actual naming happens on Slack's system
+when creating the API token.)
+5. Once the Heroku app is created, consider connecting it to your GitHub
+   repo and setting up auto-deploy on the `master` branch. This can be
+done at your app's URL:
+`https://dashboard.heroku.com/apps/YOUR-HUBOT-APP-NAME/deploy`
+
+By this point, if all has gone
+
+The aforementioned **Deploy to Heroku** button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## License
 
