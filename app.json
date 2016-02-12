@@ -1,5 +1,5 @@
 {
-  "name": "Hubot for Slack: Brigade Edition",
+  "name": "Hubot: Brigade Edition",
   "description": "One-button deploy for Hubot on Heroku with Slack adapter, customised for Code for America Brigades.",
   "logo": "https://i.cloudup.com/_823ueoTYl.png",
   "repository": "https://github.com/patcon/hubot-cfa-heroku-slack",
