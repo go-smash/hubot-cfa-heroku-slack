@@ -5,7 +5,7 @@
   "repository": "https://github.com/patcon/hubot-cfa-heroku-slack",
   "success_url": "/hubot/help",
   "env": {
-    "HUBOT_HEROKU_KEEPALIVE_URL": {
+    "HEROKU_URL": {
       "description": "URL of the hosted app. Use the App Name chosen above.",
       "value": "http://YOURAPPNAMEHERE.herokuapp.com/"
     },
