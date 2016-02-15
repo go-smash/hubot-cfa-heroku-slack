@@ -5,8 +5,22 @@
   "repository": "https://github.com/patcon/hubot-cfa-heroku-slack",
   "success_url": "/hubot/help",
   "env": {
-    "HEROKU_URL": {
-      "description": "URL of the hosted app. Use the App Name chosen above.",
+    "HUBOT_HEROKU_SLEEP_TIME": {
+      "description": "The time Hubot shuts down for the day. *Hubot works best when logged in all the time, but free Heroku apps can only be awake 18 hours/day: https://github.com/hubot-scripts/hubot-heroku-keepalive/issues/8)",
+      "value": "00:00",
+      "required": true
+    },
+    "HUBOT_HEROKU_WAKEUP_TIME": {
+      "description": "The time Hubot wakes up for the day.",
+      "value": "07:00",
+      "required": true
+    },
+    "TZ": {
+      "description": "Time timezone for Hubot wake/sleep cycle. Defaults to UTC.",
+      "value": "America/New_York"
+    },
+    "HUBOT_HEROKU_KEEPALIVE_URL": {
+      "description": "URL of the hosted app, used to keep Hubot awake. Use the App Name chosen above.",
       "value": "http://YOURAPPNAMEHERE.herokuapp.com/"
     },
     "HUBOT_SLACK_TOKEN": {
